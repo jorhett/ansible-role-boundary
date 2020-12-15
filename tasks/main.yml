@@ -1,6 +1,6 @@
 ---
 
-- name: set boundary_address
+- name: set boundary_iface
   when: boundary_iface is undefined
   set_fact:
     boundary_iface: "{{ ansible_default_ipv4.interface }}"
